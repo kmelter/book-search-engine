@@ -3,7 +3,7 @@ const express = require('express');
 //const { Server } = require('http');
 const path = require('path');
 const db = require('./config/connection');
-const { typeDefs, resolvers } = require('./utils/auth');
+const { typeDefs, resolvers } = require('./schemas');
 //const routes = require('./routes');
 const { authMiddleware } = require('./utils/auth');
 
@@ -13,7 +13,7 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: authMiddleware,
-})
+});
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
