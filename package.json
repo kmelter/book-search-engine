@@ -1,5 +1,5 @@
 {
-  "name": "googlebooks-app",
+  "name": "book-search-engine",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -16,6 +16,19 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "apollo-server-express": "^3.9.0"
-  }
+    "apollo-link-context": "^1.0.20",
+    "apollo-server-express": "^3.9.0",
+    "ember-auto-import": "^2.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmelter/book-search-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kmelter/book-search-engine/issues"
+  },
+  "engines": {
+    "node": "16.15.1"
+  },
+  "homepage": "https://github.com/kmelter/book-search-engine#readme"
 }
